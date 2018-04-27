@@ -35,7 +35,20 @@ export default new Vuex.Store({
         {"title":"Bigtax","content":"In hac habitasse platea dictumst. Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat. Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem. Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat. Praesent blandit.","id":"9052bc76-1213-4136-bcc2-66b3d3543d6d","author":"Eyde","timestamp":"1:18 PM","imageUrl":"http://dummyimage.com/138x105.bmp/dddddd/000000"},
         {"title":"Alpha","content":"Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem. Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat. Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede. Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem. Fusce consequat. Nulla nisl. Nunc nisl. Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus.","id":"d10aa247-42bc-4b97-8a74-c3fa83533eed","author":"Byram","timestamp":"4:18 AM","imageUrl":"http://dummyimage.com/186x201.jpg/5fa2dd/ffffff"},
         {"title":"Alphazap","content":"Aliquam non mauris. Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis. Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem. Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus. Pellentesque at nulla. Suspendisse potenti.","id":"34efb6ca-c582-412c-b350-121ea9783b9e","author":"Norah","timestamp":"6:02 AM","imageUrl":"http://dummyimage.com/134x153.jpg/cc0000/ffffff"}],
-        selectedPost:''
+        selectedPost:'',
+        comments: [{
+            author: "admin",
+            content: "comment content comment content comment content comment content comment content comment content comment content comment content comment content comment content comment content comment content comment content comment content comment content comment content comment content comment content comment content comment content comment content",
+            timestamp: Date.now(),
+            upvotes: 5
+          },
+          {
+          author: "admin",
+          content:
+          "comment content comment content comment content comment content comment content comment content comment content comment content comment content comment content comment content comment content comment content comment content comment content comment content comment content comment content comment content comment content comment content",
+          timestamp: Date.now(),
+          upvotes: 5
+        }]
     },
     mutations:{
         changeActivePost(state, payload){
@@ -48,6 +61,9 @@ export default new Vuex.Store({
         },
         selectedPost: state => {
             return state.selectedPost
+        },
+        comments: state => {
+            return state.comments
         }
     }
 });

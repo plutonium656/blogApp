@@ -14,14 +14,14 @@
                         {{post.content}}
                     </p>
                 </div>
-                <app-blog-comment />
+                <app-blog-comment-section />
             </div>
         </div>
     </div>
 </template>
 
 <script>
-import AppBlogComment from "./BlogComment"
+import AppBlogCommentSection from "./BlogCommentSection"
   export default {
     props: [
       "post"
@@ -32,7 +32,7 @@ import AppBlogComment from "./BlogComment"
       }
     },
     components:{
-        appBlogComment:AppBlogComment
+        appBlogCommentSection:AppBlogCommentSection
     }
   }
 
