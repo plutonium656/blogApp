@@ -22,6 +22,20 @@
     display:none;
 }
 
+.post-meta{
+    font-size:85%;
+    margin:5px 0;
+}
+
+.author{
+    font-size:inherit;
+    font-weight:900;
+}
+
+.post-content{
+    margin:10px 0;
+    font-size:115%;
+}
 
 @media only screen and (min-width: 768px){
     hr{
@@ -50,19 +64,8 @@
         display: table;
     }
 
-    .post-meta{
-        font-size:85%;
-        margin:5px 0;
-    }
 
-    .author{
-        font-size:inherit;
-        font-weight:900;
-    }
 
-    .post-content{
-        margin:10px 0;
-    }
 
     .container{
         min-width: 700px;

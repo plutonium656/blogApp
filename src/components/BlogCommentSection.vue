@@ -1,6 +1,5 @@
 <template>
   <div>
-    <hr>
     <h4 class="post-title">Comments</h4>
     <form class="commentForm">
       <input type="text">
@@ -35,28 +34,33 @@ import AppBlogComment from "./BlogComment"
   }
 
   .commentForm input {
-    width: 75%;
+    width: 73.5%;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     border: none;
     background-color: #ccc;
-    padding: 5px;
+    padding: 5px 0.5%;
   }
 
-  .commentForm input:focus {
+  .commentForm input:focus,
+  .commentForm button:focus {
     border: none;
     outline: none;
   }
 
 
   .commentForm button {
-    width: auto;
+    width: 24.5%;
     border: none;
-    padding: 5px 5px;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     background-color: #34495e;
     color: white;
+    outline:none;
+    padding: 5px 0.5%;
   }
 
+h4{
+  margin-top:50px;
+}
 </style>

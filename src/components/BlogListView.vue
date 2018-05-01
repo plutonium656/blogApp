@@ -33,6 +33,7 @@ export default {
         list-style: none;
         margin-top:50px;
         margin-left:30px;
+        
     }
 
 

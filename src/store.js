@@ -47,7 +47,7 @@ export default new Vuex.Store({
           content:
           "comment content comment content comment content comment content comment content comment content comment content comment content comment content comment content comment content comment content comment content comment content comment content comment content comment content comment content comment content comment content comment content",
           timestamp: Date.now(),
-          upvotes: 5
+          upvotes: 3
         }]
     },
     mutations:{
