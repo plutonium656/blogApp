@@ -1,6 +1,6 @@
 <template>
   <ul>
-      <li v-for="post in posts" :key="post.id" @click="$store.commit('changeActivePost',post)">{{post.title}}</li>
+      <li v-for="post in posts.slice(0,5)" :key="post.id" @click="$store.commit('changeActivePost',post)">{{post.title}}</li>
   </ul>
 </template>
 
