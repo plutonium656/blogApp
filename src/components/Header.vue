@@ -23,6 +23,7 @@
     text-transform: uppercase;
     margin-left: 5px;
     color: #eee;
+    cursor: pointer;
   }
 
   header {
