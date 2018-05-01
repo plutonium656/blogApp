@@ -12,7 +12,7 @@
 import AppHeader from "./components/Header"
 import AppBlogView from "./components/BlogView"
 import AppBlogListView from "./components/BlogListView"
-
+//test
 export default {
   name: 'app',
   data () {
