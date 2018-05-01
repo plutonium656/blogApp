@@ -1,6 +1,9 @@
 <template>
   <ul>
-      <li v-for="post in posts.slice(0,5)" :key="post.id" @click="$store.commit('changeActivePost',post)">{{post.title}}</li>
+      <li v-for="post in posts.slice(0,5)" :key="post.id" @click="$store.commit('changeActivePost',post)">
+          {{post.title}}
+          <p class="post-meta">By {{post.author}}</p>
+      </li>
   </ul>
 </template>
 
@@ -28,12 +31,16 @@ export default {
         background-color:#eee;
         cursor: pointer;
     }
+
+    .post-meta{
+        font-size: 65%;
+        color:#aaa;
+    }
 @media only screen and (min-width: 768px){
     ul{
-        list-style: none;
         margin-top:50px;
         margin-left:30px;
-        
+        list-style: none;
     }
 
 
